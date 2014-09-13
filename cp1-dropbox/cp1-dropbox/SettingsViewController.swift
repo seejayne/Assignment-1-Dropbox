@@ -1,5 +1,5 @@
 //
-//  CreateAccountRootViewController.swift
+//  SettingsViewController.swift
 //  cp1-dropbox
 //
 //  Created by Jayne Vidheecharoen on 9/12/14.
@@ -8,13 +8,18 @@
 
 import UIKit
 
-class CreateAccountRootViewController: UIViewController {
+class SettingsViewController: UIViewController {
 
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        performSegueWithIdentifier("SignUp", sender: self)
         // Do any additional setup after loading the view.
+        
+       
     }
 
     override func didReceiveMemoryWarning() {

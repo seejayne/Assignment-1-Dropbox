@@ -1,5 +1,5 @@
 //
-//  CreateAccountRootViewController.swift
+//  TermsOfServiceViewController.swift
 //  cp1-dropbox
 //
 //  Created by Jayne Vidheecharoen on 9/12/14.
@@ -8,12 +8,11 @@
 
 import UIKit
 
-class CreateAccountRootViewController: UIViewController {
+class TermsOfServiceViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        performSegueWithIdentifier("SignUp", sender: self)
         // Do any additional setup after loading the view.
     }
 
@@ -22,6 +21,9 @@ class CreateAccountRootViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func DoneButton(sender: UIButton) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
