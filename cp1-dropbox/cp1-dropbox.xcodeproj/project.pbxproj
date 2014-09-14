@@ -19,6 +19,7 @@
 		8598AB4D19C3C0CB00CE5DF2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598AB4C19C3C0CB00CE5DF2 /* SignInViewController.swift */; };
 		8598AB4F19C3C6EF00CE5DF2 /* TermsOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598AB4E19C3C6EF00CE5DF2 /* TermsOfServiceViewController.swift */; };
 		8598AB5119C3D32300CE5DF2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598AB5019C3D32300CE5DF2 /* SettingsViewController.swift */; };
+		8598AB5319C3D96600CE5DF2 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598AB5219C3D96600CE5DF2 /* ForgotPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		8598AB4C19C3C0CB00CE5DF2 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		8598AB4E19C3C6EF00CE5DF2 /* TermsOfServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsOfServiceViewController.swift; sourceTree = "<group>"; };
 		8598AB5019C3D32300CE5DF2 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8598AB5219C3D96600CE5DF2 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				8598AB2619C3ACED00CE5DF2 /* AppDelegate.swift */,
 				8598AB2819C3ACED00CE5DF2 /* ViewController.swift */,
 				8598AB2A19C3ACED00CE5DF2 /* Main.storyboard */,
+				8598AB5219C3D96600CE5DF2 /* ForgotPasswordViewController.swift */,
 				8598AB5019C3D32300CE5DF2 /* SettingsViewController.swift */,
 				8598AB4E19C3C6EF00CE5DF2 /* TermsOfServiceViewController.swift */,
 				8598AB4C19C3C0CB00CE5DF2 /* SignInViewController.swift */,
@@ -235,6 +238,7 @@
 				8598AB4D19C3C0CB00CE5DF2 /* SignInViewController.swift in Sources */,
 				8598AB4719C3B86900CE5DF2 /* CreateAccountRootViewController.swift in Sources */,
 				8598AB4F19C3C6EF00CE5DF2 /* TermsOfServiceViewController.swift in Sources */,
+				8598AB5319C3D96600CE5DF2 /* ForgotPasswordViewController.swift in Sources */,
 				8598AB2919C3ACED00CE5DF2 /* ViewController.swift in Sources */,
 				8598AB2719C3ACED00CE5DF2 /* AppDelegate.swift in Sources */,
 				8598AB5119C3D32300CE5DF2 /* SettingsViewController.swift in Sources */,

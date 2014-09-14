@@ -1,5 +1,5 @@
 //
-//  SettingsViewController.swift
+//  ForgotPasswordViewController.swift
 //  cp1-dropbox
 //
 //  Created by Jayne Vidheecharoen on 9/12/14.
@@ -8,19 +8,12 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class ForgotPasswordViewController: UIViewController {
 
-    
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var imageView: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        scrollView.contentSize = CGSize(width: 320, height: 772)
-        
         // Do any additional setup after loading the view.
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,6 +21,9 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func CancelButton(sender: UIButton) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
@@ -40,5 +36,3 @@ class SettingsViewController: UIViewController {
     */
 
 }
-
-
