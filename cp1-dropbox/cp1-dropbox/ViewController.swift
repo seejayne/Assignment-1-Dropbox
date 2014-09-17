@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func SwipeGesture(sender: AnyObject) {
+    @IBAction func SwipeGesture(sender: UISwipeGestureRecognizer) {
         performSegueWithIdentifier("NextScreen", sender: self)
     }
 

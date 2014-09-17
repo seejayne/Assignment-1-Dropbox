@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome1 View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="cp1_dropbox" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="Welcome1ViewController" customModule="cp1_dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -29,17 +29,17 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="FEr-3D-MCb">
                     <connections>
-                        <action selector="SwipeGesture:" destination="vXZ-lx-hvc" id="BGO-RQ-b7P"/>
+                        <action selector="swipeLeft:" destination="vXZ-lx-hvc" id="j9k-KO-bbe"/>
                         <segue destination="yJW-rZ-0pN" kind="modal" identifier="NextScreen" modalTransitionStyle="crossDissolve" id="2vv-Vj-8YD"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4" y="129"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome2 View Controller-->
         <scene sceneID="u6Q-kI-InA">
             <objects>
-                <viewController id="yJW-rZ-0pN" customClass="ViewController" customModule="cp1_dropbox" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yJW-rZ-0pN" customClass="Welcome2ViewController" customModule="cp1_dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6LL-eT-qrS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -48,15 +48,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OwR-0R-TXE">
-                                <rect key="frame" x="-21" y="0.0" width="341" height="568"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Wqa-Y4-iru">
+                                <rect key="frame" x="5" y="0.0" width="315" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="pQN-Lf-5tN" appends="YES" id="Etb-8K-hLn"/>
+                                    <segue destination="wMn-WK-dNP" kind="modal" modalTransitionStyle="crossDissolve" id="x6y-IN-4Aq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -67,7 +66,8 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HOv-53-2ye" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="left" id="pQN-Lf-5tN">
                     <connections>
-                        <segue destination="wMn-WK-dNP" kind="modal" identifier="NextScreen" modalTransitionStyle="crossDissolve" id="djr-1o-tiT"/>
+                        <action selector="swipeGesture:" destination="yJW-rZ-0pN" id="OeN-Jp-Pf5"/>
+                        <segue destination="wMn-WK-dNP" kind="modal" identifier="NextScreen2" id="UDw-Lr-LUY"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -394,14 +394,10 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="836"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="CR3-5Y-43I">
+                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="CR3-5Y-43I">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="836"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" id="IvI-96-VJy">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="802"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZNA-ag-MFQ">
                                         <rect key="frame" x="0.0" y="691" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -412,6 +408,10 @@
                                             <segue destination="Xri-f0-ttW" kind="modal" id="wq2-cf-WuB"/>
                                         </connections>
                                     </button>
+                                    <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" id="IvI-96-VJy">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="772"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -793,14 +793,10 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="836"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3KG-hn-vWV">
+                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3KG-hn-vWV">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="836"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" id="dlV-Im-3oR">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="802"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lkE-FQ-yqj">
                                         <rect key="frame" x="0.0" y="692" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -811,6 +807,10 @@
                                             <segue destination="Xri-f0-ttW" kind="modal" id="RXi-FF-n87"/>
                                         </connections>
                                     </button>
+                                    <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" id="dlV-Im-3oR">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="772"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -958,9 +958,10 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="o8a-jd-e8P"/>
-        <segue reference="wq2-cf-WuB"/>
         <segue reference="oTl-90-dEz"/>
-        <segue reference="gp3-4e-xaP"/>
+        <segue reference="wq2-cf-WuB"/>
+        <segue reference="o8a-jd-e8P"/>
+        <segue reference="QRl-lo-Xcc"/>
+        <segue reference="UDw-Lr-LUY"/>
     </inferredMetricsTieBreakers>
 </document>

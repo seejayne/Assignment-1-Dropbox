@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		857610D019C9200500058769 /* WelcomeScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857610CF19C9200500058769 /* WelcomeScrollViewController.swift */; };
+		857610D219C9225E00058769 /* Welcome1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857610D119C9225E00058769 /* Welcome1ViewController.swift */; };
+		857610D419C922D200058769 /* Welcome2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857610D319C922D200058769 /* Welcome2ViewController.swift */; };
 		8598AB2719C3ACED00CE5DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598AB2619C3ACED00CE5DF2 /* AppDelegate.swift */; };
 		8598AB2919C3ACED00CE5DF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598AB2819C3ACED00CE5DF2 /* ViewController.swift */; };
 		8598AB2C19C3ACED00CE5DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8598AB2A19C3ACED00CE5DF2 /* Main.storyboard */; };
@@ -33,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		857610CF19C9200500058769 /* WelcomeScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScrollViewController.swift; sourceTree = "<group>"; };
+		857610D119C9225E00058769 /* Welcome1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Welcome1ViewController.swift; sourceTree = "<group>"; };
+		857610D319C922D200058769 /* Welcome2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Welcome2ViewController.swift; sourceTree = "<group>"; };
 		8598AB2119C3ACED00CE5DF2 /* cp1-dropbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cp1-dropbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8598AB2519C3ACED00CE5DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8598AB2619C3ACED00CE5DF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +100,9 @@
 				8598AB2619C3ACED00CE5DF2 /* AppDelegate.swift */,
 				8598AB2819C3ACED00CE5DF2 /* ViewController.swift */,
 				8598AB2A19C3ACED00CE5DF2 /* Main.storyboard */,
+				857610D319C922D200058769 /* Welcome2ViewController.swift */,
+				857610D119C9225E00058769 /* Welcome1ViewController.swift */,
+				857610CF19C9200500058769 /* WelcomeScrollViewController.swift */,
 				8598AB5219C3D96600CE5DF2 /* ForgotPasswordViewController.swift */,
 				8598AB5019C3D32300CE5DF2 /* SettingsViewController.swift */,
 				8598AB4E19C3C6EF00CE5DF2 /* TermsOfServiceViewController.swift */,
@@ -236,9 +245,12 @@
 				8598AB4B19C3C0A200CE5DF2 /* CreateAccountViewController.swift in Sources */,
 				8598AB4919C3B8A100CE5DF2 /* SignInRootViewController.swift in Sources */,
 				8598AB4D19C3C0CB00CE5DF2 /* SignInViewController.swift in Sources */,
+				857610D219C9225E00058769 /* Welcome1ViewController.swift in Sources */,
+				857610D419C922D200058769 /* Welcome2ViewController.swift in Sources */,
 				8598AB4719C3B86900CE5DF2 /* CreateAccountRootViewController.swift in Sources */,
 				8598AB4F19C3C6EF00CE5DF2 /* TermsOfServiceViewController.swift in Sources */,
 				8598AB5319C3D96600CE5DF2 /* ForgotPasswordViewController.swift in Sources */,
+				857610D019C9200500058769 /* WelcomeScrollViewController.swift in Sources */,
 				8598AB2919C3ACED00CE5DF2 /* ViewController.swift in Sources */,
 				8598AB2719C3ACED00CE5DF2 /* AppDelegate.swift in Sources */,
 				8598AB5119C3D32300CE5DF2 /* SettingsViewController.swift in Sources */,
@@ -435,6 +447,7 @@
 				8598AB4219C3ACED00CE5DF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8598AB4319C3ACED00CE5DF2 /* Build configuration list for PBXNativeTarget "cp1-dropboxTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +456,7 @@
 				8598AB4519C3ACED00CE5DF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,29 +1,24 @@
 //
-//  SettingsViewController.swift
+//  Welcome1ViewController.swift
 //  cp1-dropbox
 //
-//  Created by Jayne Vidheecharoen on 9/12/14.
+//  Created by Jayne Vidheecharoen on 9/16/14.
 //  Copyright (c) 2014 Jayne Vidheecharoen. All rights reserved.
 //
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class Welcome1ViewController: UIViewController {
 
-    
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var imageView: UIImageView!
-    
+    @IBAction func swipeLeft(sender: UISwipeGestureRecognizer) {
+        
+        performSegueWithIdentifier("NextScreen", sender: self)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        scrollView.contentSize = imageView.frame.size
-        
-            //imageView.frame.size -- This breaks scrolling?
-        
-        
         // Do any additional setup after loading the view.
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,5 +38,3 @@ class SettingsViewController: UIViewController {
     */
 
 }
-
-
