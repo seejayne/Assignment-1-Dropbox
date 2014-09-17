@@ -17,4 +17,4 @@ I am still trying to get the welcome screens to scroll properly. Vertical scroll
 
 ####GIF walkthrough of all required and optional stories
 
-![Dropbox Gif](/gif/dropbox.gif)
+![Dropbox Gif](https://raw.githubusercontent.com/seejayne/Assignments/master/cp1-dropbox/gif/dropbox.gif)
