@@ -8,7 +8,7 @@ This is a prototype of Dropbox! It lets you navigate through some scenes and som
 I am still trying to get the welcome screens to scroll properly. Vertical scrolling seems to work just fine, not sure why left to right scrolling doesn't work. Also looking into just using a Page View Controller instead. 
 
 ####How many hours did it take to complete?
-6 hours to get the basic functionality. Additional 3 for playing with optional things. Took a while to fix the scrollview. Lots of things to check and uncheck in the various properties!
+6 hours to get the basic functionality. Additional 3 for playing with optional things. Took a while to fix the scrollview. Lots of things to check and uncheck in the various properties! Still playing around with some things, but getting close to deadline, so submitting what I have so far right now.
 
 ####Which required and optional stories have you completed?
 - Completed all the required stories
