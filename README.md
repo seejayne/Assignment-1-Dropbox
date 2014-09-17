@@ -1,8 +1,6 @@
-Assignments
+[Code Path for iOS] Fall 2014
 ===========
 
-![Alternate text](/cp1-dropbox/gif/dropbox.gif)
+This is where I'll be putting my assignments for the Codepath class! Here's what's inside:
 
-Code Path iOS Assignments
-
-Hello this is a test!
+- Dropbox Prototype
